@@ -125,9 +125,9 @@ public class ApiConfig {
         }
         return "".getBytes();
     }
-
+//默认直播源设置
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://raw.githubusercontent.com/Learn231227/iptv999.github.io/main/0723.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
